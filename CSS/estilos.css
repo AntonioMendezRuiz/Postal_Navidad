@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "MerryChristmas";
+    src: url("../Fuente/PWHappyChristmas.ttf");
+}
+@keyframes nieve {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+
+@keyframes volar {
+  0% {
+    left: 0px;
+    top: 50px;
+    width: 20px;
+  }
+  25% {
+    top:200px;
+    width: 70px;
+  }
+  50% {
+    top: 100px;
+    width: 40px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  75% {
+    top: 140px;
+    width: 65px;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    margin-left: -30px;
+    top: 150px;
+    width: 25px;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.contenedor {
+  height: 98.8%;
+  width: auto;
+  background-color: #256a92;
+  background-image: url("Imagenes/snow1.png"), url("Imagenes/snow2.png"),
+    url("Imagenes/snow3.png");
+  animation: nieve 20s linear infinite;
+  position: relative;
+  border: 5px solid white;
+  z-index: 0;
+}
+.marco {
+  height: 100%;
+  width: 100%;
+  background-image: url("Imagenes/marco.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 1;
+}
+h4{
+    font-family: 'MerryChristmas', cursive;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    bottom: 0;
+    right: 0;
+    font-size: 5rem;
+    transition: 2s;
+    
+}
+h4:hover{
+    font-size: 9rem;
+}
+
+#santa{
+    position:relative;
+    left: 100%;
+    animation:volar 12s infinite;
+    z-index: -1;
+}
