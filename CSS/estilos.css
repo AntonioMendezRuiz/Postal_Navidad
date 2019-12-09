@@ -74,16 +74,16 @@ h4{
     text-shadow: 2px 2px 4px #000000;
     color: white;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
     bottom: 0;
     right: 0;
-    font-size: 5rem;
+    font-size: 8vh;
     transition: 2s;
     
 }
 h4:hover{
-    font-size: 9rem;
+    font-size: 15vh;
 }
 
 #santa{
