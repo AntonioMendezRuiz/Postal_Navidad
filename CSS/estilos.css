@@ -80,7 +80,8 @@ h4{
     right: 0;
     font-size: 8vh;
     transition: 2s;
-    
+    width: max-content;
+    height: max-content;
 }
 h4:hover{
     font-size: 15vh;
