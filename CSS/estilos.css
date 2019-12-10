@@ -52,7 +52,7 @@ body {
 .contenedor {
   height: 98.8%;
   width: auto;
-  background-color: #256a92;
+  background-color: #1a4964;
   background-image: url("Imagenes/snow1.png"), url("Imagenes/snow2.png"),
     url("Imagenes/snow3.png");
   animation: nieve 20s linear infinite;
